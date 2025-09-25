@@ -6,10 +6,8 @@ const app = express();
 // Use the port provided by Render's environment, or 3000 for local development.
 const PORT = process.env.PORT || 3000;
 
-// Configure CORS for production.
-// Replace 'https://your-frontend-url.onrender.com' with your actual Render frontend URL.
 const corsOptions = {
-  origin: ['http://localhost:3000', 'https://gaia-os-frontend.vercel.app'],
+  origin: true,
   optionsSuccessStatus: 200
 };
 
@@ -363,28 +361,28 @@ const mockData = {
     appliances: [
       {
         name: "Refrigerator",
-        photoUrl: "https://images.unsplash.com/photo-1628126742588-4e38e6f1400d?q=80&w=2940&auto=format&fit=crop",
+        photoUrl: "https://images.unsplash.com/photo-1721613877687-c9099b698faa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         costPerDay: 30,
         kwhPerDay: 2.0,
         co2PerDay: 0.5
       },
       {
         name: "Washing Machine",
-        photoUrl: "https://images.unsplash.com/photo-1596245347895-ec945c5897c8?q=80&w=2832&auto=format&fit=crop",
+        photoUrl: "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         costPerDay: 45,
         kwhPerDay: 3.5,
         co2PerDay: 0.8
       },
       {
         name: "Smart Speaker",
-        photoUrl: "https://images.unsplash.com/photo-1522073994783-057d47833072?q=80&w=2832&auto=format&fit=crop",
+        photoUrl: "https://images.unsplash.com/photo-1517756548657-b2c24162e63d?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         costPerDay: 5,
         kwhPerDay: 0.2,
         co2PerDay: 0.05
       },
       {
         name: "Laptop",
-        photoUrl: "https://images.unsplash.com/photo-1541807084-5c52b6b3ade1?q=80&w=2787&auto=format&fit=crop",
+        photoUrl: "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         costPerDay: 15,
         kwhPerDay: 0.8,
         co2PerDay: 0.15
