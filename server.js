@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 // Configure CORS for production.
 // Replace 'https://your-frontend-url.onrender.com' with your actual Render frontend URL.
 const corsOptions = {
-  origin: ['http://localhost:3000', 'https://gaiaos-frontend.onrender.com'],
+  origin: ['http://localhost:3000', 'https://gaia-os-frontend.vercel.app'],
   optionsSuccessStatus: 200
 };
 
